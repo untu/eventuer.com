@@ -41,7 +41,7 @@ body {
 	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-.planContainer .title h2 {
+.planContainer .titlePrice h2 {
 	font-size: 2.125em;
 	font-weight: 300;
 	color: #3e4f6a;
@@ -49,7 +49,7 @@ body {
 	padding: .6em 0;
 }
 
-.planContainer .title h2.bestPlanTitle {
+.planContainer .titlePrice h2.bestPlantitlePrice {
 	background: #3e4f6a;
 
 	background: -webkit-linear-gradient(top, #475975, #364761);
@@ -101,7 +101,7 @@ body {
 	color: #979797;
 }
 
-.planContainer .button a {
+.planContainer .buttonPrice a {
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #3e4f6a;
@@ -116,7 +116,7 @@ body {
 	margin: 1.5em 0 1.8em;
 }
 
-.planContainer .button a.bestPlanButton {
+.planContainer .buttonPrice a.bestPlanButton {
 	color: #fff;
 	background: #f7814d;
 	border: 2px solid #f7814d;
@@ -165,49 +165,48 @@ body {
 
 @media screen and (min-width: 1025px) {
 
-#pricePlans {
-	margin: 2em auto;
-}
+	#pricePlans {
+		margin: 2em auto;
+	}
 
-#pricePlans #plans .plan {
-	width: 24%;
-	margin: 0 1.33% 20px 0;
+	#pricePlans #plans .plan {
+		width: 24%;
+		margin: 0 1.33% 20px 0;
 
-	-webkit-transition: all .25s;
-	   -moz-transition: all .25s;
-	    -ms-transition: all .25s;
-	     -o-transition: all .25s;
-	        transition: all .25s;
-}
+		-webkit-transition: all .25s;
+		-moz-transition: all .25s;
+		-ms-transition: all .25s;
+		-o-transition: all .25s;
+		transition: all .25s;
+	}
 
-#pricePlans #plans > li:last-child {
-	margin-right: 0;
-}
+	#pricePlans #plans > li:last-child {
+		margin-right: 0;
+	}
 
-#pricePlans #plans .plan:hover {
-	-webkit-transform: scale(1.04);
-	   -moz-transform: scale(1.04);
-	    -ms-transform: scale(1.04);
-	     -o-transform: scale(1.04);
-	        transform: scale(1.04);
-}
+	#pricePlans #plans .plan:hover {
+		-webkit-transform: scale(1.04);
+		-moz-transform: scale(1.04);
+		-ms-transform: scale(1.04);
+		-o-transform: scale(1.04);
+		transform: scale(1.04);
+	}
 
-.planContainer .button a {
-	-webkit-transition: all .25s;
-	   -moz-transition: all .25s;
-	    -ms-transition: all .25s;
-	     -o-transition: all .25s;
-	        transition: all .25s;
-}
+	.planContainer .buttonPrice a {
+		-webkit-transition: all .25s;
+		-moz-transition: all .25s;
+		-ms-transition: all .25s;
+		-o-transition: all .25s;
+		transition: all .25s;
+	}
 
-.planContainer .button a:hover {
-	background: #3e4f6a;
-	color: #fff;
-}
+	.planContainer .buttonPrice a:hover {
+		background: #3e4f6a;
+		color: #fff;
+	}
 
-.planContainer .button a.bestPlanButton:hover {
-	background: #ff9c70;
-	border: 2px solid #ff9c70;
-}
-
+	.planContainer .buttonPrice a.bestPlanButton:hover {
+		background: #ff9c70;
+		border: 2px solid #ff9c70;
+	}
 }
