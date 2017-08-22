@@ -7,6 +7,11 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+			<!--Price Style -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+
 	</head>
 	<body class="homepage">
 		<div id="page-wrapper">
@@ -58,7 +63,9 @@
 				<div id="intro-wrapper" class="wrapper style1">
 					<div class="title">Что мы делаем</div>
 					<section id="intro" class="container">
-						<p class="style1">Lorem ipsum dolor sit amet, sea postulant gubergren ex. Congue nullam doctus at qui, ei eum iudicabit molestiae. Id eos essent causae lobortis, nec an harum putant integre, nec an animal iisque scriptorem. Vim recteque adolescens at. Cum porro augue atomorum an, sed ea meis debet verterem. Mei et invidunt facilisi scripserit, ex offendit explicari mea, quo in altera fierent deleniti.
+						<p class="style1">Мы проводим мероприятия для IT-компаний: митапы, конференции, хакатоны, фестивали, круглые столы и мастер-классы.<br><br>
+						Принцип нашей работы - минимум вопросов клиентам, компетентная аудитория, комфортные помещения, PR-поддержка и аналитика результатов мероприятия. <br>
+						Базовые пакеты услуг легко расширяются дополнительными опциями и вашими идеями, позволяя достигать положительной отдалчи от мероприятия.
 						</p>
 						<p class="style2">
 							Ультимативное заявление с цифрой<br class="mobile-hide" />
@@ -78,10 +85,72 @@
 					<div class="title">Сколько стоит</div>
 					<div id="main" class="container">
 
-						<!-- Image -->
-							<a href="#" class="image featured">
+
+
+						<!-- Price -->
+									<section id="pricePlans">
+											<ul id="plans">
+												<li class="plan">
+													<ul class="planContainer">
+														<li class="title"><h2>Мини</h2></li>
+														<li class="price"><p>100 000₽</p></li>
+														<li>
+															<ul class="options">
+																<li>2x <span>option 1</span></li>
+																<li>Free <span>option 2</span></li>
+																<li>Unlimited <span>option 3</span></li>
+																<li>Unlimited <span>option 4</span></li>
+																<li>1x <span>option 5</span></li>
+															</ul>
+														</li>
+														<li class="button"><a href="#">Заказать</a></li>
+													</ul>
+												</li>
+
+												<li class="plan">
+													<ul class="planContainer">
+														<li class="title"><h2 class="bestPlanTitle">Стандарт</h2></li>
+														<li class="price"><p class="bestPlanPrice">250 000₽</p></li>
+														<li>
+															<ul class="options">
+																<li>2x <span>option 1</span></li>
+																<li>Free <span>option 2</span></li>
+																<li>Unlimited <span>option 3</span></li>
+																<li>Unlimited <span>option 4</span></li>
+																<li>1x <span>option 5</span></li>
+															</ul>
+														</li>
+														<li class="button"><a class="bestPlanButton" href="#">Заказать</a></li>
+													</ul>
+												</li>
+
+												<li class="plan">
+													<ul class="planContainer">
+														<li class="title"><h2>Макси</h2></li>
+														<li class="price"><p>500 000₽</p></li>
+														<li>
+															<ul class="options">
+																<li>2x <span>option 1</span></li>
+																<li>Free <span>option 2</span></li>
+																<li>Unlimited <span>option 3</span></li>
+																<li>Unlimited <span>option 4</span></li>
+																<li>1x <span>option 5</span></li>
+															</ul>
+														</li>
+														<li class="button"><a href="#">Заказать</a></li>
+													</ul>
+												</li>
+
+												
+											</ul> <!-- End ul#plans -->
+											
+										</section>
+
+
+
+							<!-- <a href="#" class="image featured">
 								<img src="images/pic01.jpg" alt="" />
-							</a>
+							</a> -->
 
 						<!-- Features -->
 							<section id="features">
@@ -149,12 +218,12 @@
 						<div class="row 150%">
 							<div class="4u 12u(mobile)">
 								<section class="highlight">
-									<iframe width="326" height="183" src="https://www.youtube.com/embed/hX4GhVeEI5c?rel=0" frameborder="0" allowfullscreen></iframe>
+									<img src="images/iot_conference.png" width="326" height="183" alt="" />
 									<h3><a href="#">Конференция "Что нужно знать, чтобы работать с IoT"</a></h3>
 									<p><h4>25 июля 2016</h4>
 									Конференция, объединившая инженеров, разработчиков, пользователей и бизнесменов. </p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">Learn More</a></li>
+									<!-- <ul class="actions">
+										<li><a href="#" class="button style1">Learn More</a></li> -->
 									</ul>
 								</section>
 							</div>
@@ -164,8 +233,8 @@
 									<h3><a href="#">Митап "Использование TypeScript в NodeJS"</a></h3>
 									<p><h4>31 марта 2017</h4>
 									Конференция, объединившая инженеров, разработчиков, пользователей и бизнесменов. </p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">Learn More</a></li>
+									<!-- <ul class="actions">
+										<li><a href="#" class="button style1">Learn More</a></li> -->
 									</ul>
 								</section>
 							</div>
@@ -175,8 +244,8 @@
 									<h3><a href="#">Конференция: "Big Monitoring Meetup"</a></h3>
 									<p><h4>14 июля 2017</h4>
 									Конференция, объединившая инженеров, разработчиков, пользователей и бизнесменов. </p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">Learn More</a></li>
+									<!-- <ul class="actions">
+										<li><a href="#" class="button style1">Learn More</a></li> -->
 									</ul>
 								</section>
 							</div>
@@ -189,10 +258,10 @@
 					<div class="title">The Rest Of It</div>
 					<div id="footer" class="container">
 						<header class="style1">
-							<h2>Ipsum sapien elementum portitor?</h2>
+							<h2>Вы в одном шаге от Вашей лучшей конференции</h2>
 							<p>
-								Sed turpis tortor, tincidunt sed ornare in metus porttitor mollis nunc in aliquet.<br />
-								Nam pharetra laoreet imperdiet volutpat etiam consequat feugiat.
+								Мы умеем проводить ИТ мероприятия, не задавая лишних вопросов.<br />
+								Свяжитесь с нами удобным для вас способом. Остальное - наша забота!
 							</p>
 						</header>
 						<hr />
@@ -204,7 +273,7 @@
 										<form method="post" action="#">
 											<div class="row 50%">
 												<div class="6u 12u(mobile)">
-													<input type="text" name="name" id="contact-name" placeholder="Имя" />
+													<input type="text" name="name" id="contact-name" placeholder="Name" />
 												</div>
 												<div class="6u 12u(mobile)">
 													<input type="text" name="email" id="contact-email" placeholder="Email" />
@@ -212,14 +281,14 @@
 											</div>
 											<div class="row 50%">
 												<div class="12u">
-													<textarea name="message" id="contact-message" placeholder="Сообщение" rows="4"></textarea>
+													<textarea name="message" id="contact-message" placeholder="" rows="4"></textarea>
 												</div>
 											</div>
 											<div class="row">
 												<div class="12u">
 													<ul class="actions">
-														<li><input type="submit" class="style1" value="Send" /></li>
-														<li><input type="reset" class="style2" value="Reset" /></li>
+														<li><input type="submit" class="style1" value="Отправить" /></li>
+														<li><input type="reset" class="style2" value="Очистить" /></li>
 													</ul>
 												</div>
 											</div>
@@ -236,8 +305,8 @@
 												<section>
 													<h3 class="icon fa-home">Контакты</h3>
 													<p>
-														Eventuer IT Events Agency<br />
-														Россия, Санкт-Петербург<br />
+														Eventuer IT Events<br />
+														Россия, СПб<br />
 														наб. реки Мойки, 61
 													</p>
 												</section>
@@ -264,9 +333,9 @@
 											</div>
 											<div class="6u 12u(mobile)">
 												<section>
-													<h3 class="icon fa-phone">Phone</h3>
+													<h3 class="icon fa-phone">Телефон</h3>
 													<p>
-														(000) 555-0000
+														(812) 309-9885
 													</p>
 												</section>
 											</div>
@@ -279,7 +348,7 @@
 					</div>
 					<div id="copyright">
 						<ul>
-							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; Eventuer</li>
 						</ul>
 					</div>
 				</div>
