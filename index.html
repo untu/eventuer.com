@@ -76,17 +76,18 @@
         Проведение мероприятий даёт на 30%<br class="mobile-hide"/>
         больше результат, чем PR-кампании, SMM и рассылки.
       </p> -->
-      
-      <p class="style3">Презентация продукта, продажи, рекрутинг, продвижение, повышение лояльности, поиск партнёров и новых клиентов. Всё здесь.</p>
+
+      <p class="style3">Презентация продукта, продажи, рекрутинг, продвижение, повышение лояльности, поиск партнёров и
+        новых клиентов. Всё здесь.</p>
 
 
-        <!-- <p class="style3">It's <strong>responsive</strong>, built on <strong>HTML5</strong> and <strong>CSS3</strong>, and
-        released for
-        free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0 license</a>, so use it for
-        any of
-        your personal or commercial projects &ndash; just be sure to credit us!</p> -->
+      <!-- <p class="style3">It's <strong>responsive</strong>, built on <strong>HTML5</strong> and <strong>CSS3</strong>, and
+      released for
+      free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0 license</a>, so use it for
+      any of
+      your personal or commercial projects &ndash; just be sure to credit us!</p> -->
       <ul class="actions">
-        <li><a href="#" class="button style3 big">Заказать мероприятие</a></li>
+        <li><a href="#" class="js-order button style3 big">Заказать мероприятие</a></li>
       </ul>
     </section>
   </div>
@@ -113,10 +114,10 @@
                   <li>Чай, кофе, печенье<span></span></li>
                   <li>Полиграфия<span></span></li>
                   <li>Пресс-релиз<span></span></li>
-                  <li>Реклама и PR события<span></span></li>            
+                  <li>Реклама и PR события<span></span></li>
                 </ul>
               </li>
-              <li class="buttonPrice"><a href="#">Заказать</a></li>
+              <li class="buttonPrice"><a data-offer='Мини конференция' class="js-order-offer" href="#">Заказать</a></li>
             </ul>
           </li>
 
@@ -137,10 +138,10 @@
                   <li>Полиграфия<span></span></li>
                   <li>Пресс-релиз<span></span></li>
                   <li>Реклама и PR события<span></span></li>
-                  <li>+ Базовый SMM<span></span></li> 
+                  <li>+ Базовый SMM<span></span></li>
                 </ul>
               </li>
-              <li class="buttonPrice"><a class="bestPlanButton" href="#">Заказать</a></li>
+              <li class="buttonPrice"><a data-offer='Конференция стандарт' class="js-order-offer" class="bestPlanButton" href="#">Заказать</a></li>
             </ul>
           </li>
 
@@ -164,10 +165,10 @@
                   <li>Пресс-релиз<span></span></li>
                   <li>Реклама и PR события<span></span></li>
                   <li>+ Расширеный SMM<span></span></li>
-                  <li>+ Телеграм канал события<span></span></li>  
+                  <li>+ Телеграм канал события<span></span></li>
                 </ul>
               </li>
-              <li class="buttonPrice"><a href="#">Заказать</a></li>
+              <li class="buttonPrice"><a data-offer='Конференция Максимальная' class="js-order-offer" href="#">Заказать</a></li>
             </ul>
           </li>
 
@@ -180,26 +181,31 @@
                   <li> Любой набор опций в любом сочетании <span></span></li>
                 </ul>
               </li>
-              <li class="buttonPrice"><a href="#">Заказать</a></li>
+              <li class="buttonPrice"><a  data-offer='Свой формат' class="js-order-offer" href="#">Заказать</a></li>
             </ul>
           </li>
 
         </ul> <!-- End ul#plans -->
       </section>
       <h3>Дополнительные опции:</h3>
-      <li>Создание сайта мероприятия</li>
-      <li>Предивентная аналитика</li>
-      <li>Послеивентная аналитика</li>
-      <li>Организация after party</li>
-      <li>Анкетирование участников после мероприятия</li>
-      <li>Полное SMM-сопровождение</li>
-      <li>Привлечение спонсоров и партнеров мероприятия</li>
-      <li>Информационный экран для медиа-контента</li>
-      <li>Изготовление футболок мероприятия</li>
-      <li>Проведение конкурсов</li>
-      <li>Ведущий мероприятия</li>
-      <li>Поиск спикеров для мероприятия</li>
-
+      <div class="row options">
+        <ul class="6u 12u(mobile)">
+          <li>Создание сайта мероприятия</li>
+          <li>Предивентная аналитика</li>
+          <li>Послеивентная аналитика</li>
+          <li>Организация after party</li>
+          <li>Анкетирование участников после мероприятия</li>
+          <li>Полное SMM-сопровождение</li>
+        </ul>
+        <ul class="6u 12u(mobile)">
+          <li>Привлечение спонсоров и партнеров мероприятия</li>
+          <li>Информационный экран для медиа-контента</li>
+          <li>Изготовление футболок мероприятия</li>
+          <li>Проведение конкурсов</li>
+          <li>Ведущий мероприятия</li>
+          <li>Поиск спикеров для мероприятия</li>
+        </ul>
+      </div>
 
     </div>
   </div>
@@ -216,13 +222,15 @@
           <div class="6u 12u(mobile)">
             <section>
               <h3 class="icon fa-comments">Лицом к лицу</h3>
-              <p>Живое общение со клиентами, налаживание контактов с новыми. Не надо искать партнёров и спонсоров, они нашли вас сами!</p>
+              <p>Живое общение со клиентами, налаживание контактов с новыми. Не надо искать партнёров и спонсоров, они
+                нашли вас сами!</p>
             </section>
           </div>
           <div class="6u 12u(mobile)">
             <section>
               <h3 class="icon fa-bullhorn">Расскажите о своей компании</h3>
-              <p>Стоит ли ждать какой-то выставки, чтобы выступить в ограниченный промежуток времени? Говорите о себе столько, сколько считаете нужным.</p>
+              <p>Стоит ли ждать какой-то выставки, чтобы выступить в ограниченный промежуток времени? Говорите о себе
+                столько, сколько считаете нужным.</p>
             </section>
           </div>
         </div>
@@ -230,13 +238,15 @@
           <div class="6u 12u(mobile)">
             <section>
               <h3 class="icon fa-pie-chart">Расходуйте бюджет эффективно</h3>
-              <p>При ограниченном маркетинговом бюджете, мероприятие - то что вам нужно. Компетентная целевая аудитория по достоинству вас оценит, а вы не потратите ресурсы на «прохожих».</p>
+              <p>При ограниченном маркетинговом бюджете, мероприятие - то что вам нужно. Компетентная целевая аудитория
+                по достоинству вас оценит, а вы не потратите ресурсы на «прохожих».</p>
             </section>
           </div>
           <div class="6u 12u(mobile)">
             <section>
               <h3 class="icon fa-search">Получайте мгновенный feedback</h3>
-              <p>Еще на мероприятии вы узнаете от своих клиентов, на чём вам следует сфокусироваться, а что у вас получается замечательно.</p>
+              <p>Еще на мероприятии вы узнаете от своих клиентов, на чём вам следует сфокусироваться, а что у вас
+                получается замечательно.</p>
             </section>
           </div>
         </div>
@@ -244,7 +254,8 @@
           <div class="6u 12u(mobile)">
             <section>
               <h3 class="icon fa-users">Общайтесь с миллионами людей</h3>
-              <p>Общайтесь не только с живой, но и с цифровой аудиторией. Онлайн трансляция мероприятия и видеозапись существенно расширят количество участников.</p>
+              <p>Общайтесь не только с живой, но и с цифровой аудиторией. Онлайн трансляция мероприятия и видеозапись
+                существенно расширят количество участников.</p>
             </section>
           </div>
           <div class="6u 12u(mobile)">
@@ -256,7 +267,7 @@
         </div>
       </div>
       <ul class="actions actions-centered">
-        <li><a href="#" class="button style1 big">Хочу провести мероприятие!</a></li>
+        <li><a href="#" class="js-order button style1 big">Хочу провести мероприятие!</a></li>
         <!-- <li><a href="#" class="button style2 big">Расскажите мне больше</a></li> -->
       </ul>
     </section>
@@ -307,6 +318,33 @@
     </div>
   </div>
 
+  <div id="modal">
+    <div class="modal-wrapper">
+    </div>
+    <form id="modal-form" method="post" action="#">
+      <div class="row 50%">
+        <div class="js-offer">
+        </div>
+        <div class="12u 12u(mobile)">
+          <input type="text" name="name" id="modal-contact-name" placeholder="Имя">
+        </div>
+        <div class="12u 12u(mobile)">
+          <input type="text" name="email" id="modal-contact-email" placeholder="Телефон или Email">
+        </div>
+      </div>
+      <div class="row">
+        <div class="12u">
+          <ul class="actions">
+            <li><input type="submit" class="js-modal-send style1" value="Заказать"></li>
+          </ul>
+        </div>
+      </div>
+    </form>
+    <div id="thanks">
+      Ваш, запрос принят. Свяжесмся с Вами в ближайшее время.
+    </div>
+  </div>
+
   <!-- Footer -->
   <div id="footer-wrapper" class="wrapper">
     <div class="title">Связаться</div>
@@ -324,10 +362,10 @@
 
           <!-- Contact Form -->
           <section>
-            <form method="post" action="#">
+            <form id="contact-form" method="post" action="#">
               <div class="row 50%">
                 <div class="6u 12u(mobile)">
-                  <input type="text" name="name" id="contact-name" placeholder="Name"/>
+                  <input type="text" name="name" id="contact-name" placeholder="Имя"/>
                 </div>
                 <div class="6u 12u(mobile)">
                   <input type="text" name="email" id="contact-email" placeholder="Email"/>
@@ -335,13 +373,13 @@
               </div>
               <div class="row 50%">
                 <div class="12u">
-                  <textarea name="message" id="contact-message" placeholder="" rows="4"></textarea>
+                  <textarea name="message" id="contact-message" placeholder="Сообщение" rows="4"></textarea>
                 </div>
               </div>
               <div class="row">
                 <div class="12u">
                   <ul class="actions">
-                    <li><input type="submit" class="style1" value="Отправить"/></li>
+                    <li><input type="submit" class="style1 js-form-send" value="Отправить"/></li>
                     <li><input type="reset" class="style2" value="Очистить"/></li>
                   </ul>
                 </div>

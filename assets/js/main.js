@@ -93,4 +93,67 @@
 
 	});
 
+	$('.js-order').click(function(){
+		var $modal = $('#modal');
+    $modal.find('.js-offer').hide();
+    $modal.toggle();
+
+		return false;
+	})
+
+	$('.js-order-offer').click(function(evt){
+		var offer = $(evt.target).data('offer');
+		var $modal = $('#modal');
+		$modal.find('.js-offer').text(offer).show();
+    $modal.toggle();
+
+    return false;
+	});
+
+  $('.modal-wrapper').click(function(){
+    var $modal = $('#modal');
+    $modal.hide();
+    $modal.find('.js-offer').text('')
+    $('#thanks').hide();
+    $('#modal-form').show();
+
+
+    return false;
+  })
+
+	$('.js-modal-send').click(function() {
+    var $modal = $('#modal');
+		var fields = {
+      site: 'eventuer.com',
+      order: $modal.find('.js-offer').text(),
+      name: $modal.find('#modal-contact-name').val(),
+      contact: $modal.find('#modal-contact-email').val()
+    };
+		$.post('http://saymon.info/f.php', fields, function() {
+			$('#thanks').show();
+      $('#modal-form').hide();
+		});
+
+		return false;
+  });
+
+  $('.js-form-send').click(function() {
+    var $form = $('#contact-form');
+    var fields = {
+      site: 'eventuer.com',
+      name: $form.find('#contact-name').val(),
+      contact: $form.find('#contact-email').val(),
+      message: $form.find('#contact-message').val()
+    };
+
+    $.post('http://saymon.info/f.php', fields, function(){
+      var $modal = $('#modal');
+      $modal.show();
+      $('#thanks').show();
+      $('#modal-form').hide();
+		})
+
+		return false;
+  })
+
 })(jQuery);
