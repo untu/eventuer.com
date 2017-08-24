@@ -22,10 +22,37 @@
   <div id="header-wrapper" class="wrapper">
     <div id="header">
 
+      <style type="text/css">
+          h1 a {
+              font-size: 50px;
+              font-weight: normal;
+              cursor: pointer;
+              text-shadow: 0 0 20px transparent;
+              color: transparent;
+              animation: shadows 10s infinite ease-in;
+            }
+            h1 a:hover {
+              /*text-shadow: 0 0 0 #333;*/
+              }
+            @keyframes shadows {
+              5% {
+                text-shadow: 0 0px 1px hsl(4%, 69%, 66%, 0.4);
+              }
+              10% {
+                text-shadow: 0 0px 1px white;
+              }
+              60% {
+                text-shadow: 0 0px 1px white;
+              }
+              90% {
+                text-shadow: 0 30px 40px transparent;
+              }  
+            }  
+      </style>
       <!-- Logo -->
       <div id="logo">
-        <h1><a href="index.html">Eventure</a></h1>
-        <p>Организация мероприятий для ИТ компаний</p>
+        <h1><a href="index.html">Eventuer</a></h1>
+        <p>Организация мероприятий для хайтек компаний</p>
       </div>
 
 
