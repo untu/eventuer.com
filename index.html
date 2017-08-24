@@ -24,16 +24,20 @@
     <!-- Logo -->
       <style type="text/css">
           h1 a {
-              font-size: 2.5em;
+              font-size: 3em;
               font-weight: normal;
               cursor: pointer;
               text-shadow: 0 0 20px transparent;
               color: transparent;
               animation: shadows 10s infinite ease-in;
-            }
-            h1 a:hover {
+          }
+          @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+            h1 a { font-size: 2em; }
+          }
+
+          h1 a:hover {
               /*text-shadow: 0 0 0 #333;*/
-              }
+          }
             @keyframes shadows {
               5% {
                 text-shadow: 0 0px 1px hsl(4%, 69%, 66%, 0.4);
