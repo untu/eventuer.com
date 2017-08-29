@@ -1599,7 +1599,8 @@
 			}
 
 	#header-wrapper {
-		background: url("../../images/banner.jpg") center center;
+		background: none;
+		/*background: url("../../images/banner.jpg") center center;*/
 		background-size: cover;
 	}
 

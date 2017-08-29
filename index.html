@@ -16,51 +16,58 @@
 
 </head>
 <body class="homepage">
+  <div id="big-video-vid" style="position: absolute; overflow: hidden; width: 100%;">
+    <video autoplay="autoplay" src="assets/market.mp4"></video>
+  </div>
 <div id="page-wrapper">
 
   <!-- Header -->
   <div id="header-wrapper" class="wrapper">
     <div id="header">
-    <!-- Logo -->
+      <!-- Logo -->
       <style type="text/css">
+        h1 a {
+          font-size: 3em;
+          font-weight: normal;
+          cursor: pointer;
+          text-shadow: 0 0 20px transparent;
+          color: transparent;
+          animation: shadows 10s infinite ease-in;
+        }
+
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
           h1 a {
-              font-size: 3em;
-              font-weight: normal;
-              cursor: pointer;
-              text-shadow: 0 0 20px transparent;
-              color: transparent;
-              animation: shadows 10s infinite ease-in;
+            font-size: 2em;
           }
-          @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-            h1 a { font-size: 2em; }
-          }
+        }
 
-          h1 a:hover {
-              /*text-shadow: 0 0 0 #333;*/
-          }
-            @keyframes shadows {
-              5% {
-                text-shadow: 0 0px 1px hsl(4%, 69%, 66%, 0.4);
-              }
-              10% {
-                text-shadow: 0 0px 1px white;
-              }
-              60% {
-                text-shadow: 0 0px 1px white;
-              }
-              90% {
-                text-shadow: 0 30px 40px transparent;
-              }  
-            }  
+        h1 a:hover {
+          /*text-shadow: 0 0 0 #333;*/
+        }
 
-            .plus { 
-                background-color: #D7D9D7;
-                /*text-decoration-line: underline;*/
-                /*text-decoration-style: wavy;*/
-                text-decoration-color: #666;
-             }
+        @keyframes shadows {
+          5% {
+            text-shadow: 0 0px 1px hsl(4%, 69%, 66%, 0.4);
+          }
+          10% {
+            text-shadow: 0 0px 1px white;
+          }
+          60% {
+            text-shadow: 0 0px 1px white;
+          }
+          90% {
+            text-shadow: 0 30px 40px transparent;
+          }
+        }
+
+        .plus {
+          background-color: #D7D9D7;
+          /*text-decoration-line: underline;*/
+          /*text-decoration-style: wavy;*/
+          text-decoration-color: #666;
+        }
       </style>
-     
+
       <div id="logo">
         <h1><a href="index.html">Eventuer</a></h1>
         <p>Организация мероприятий для хайтек компаний</p>
@@ -103,7 +110,8 @@
   <div id="intro-wrapper" class="wrapper style1">
     <div class="title">Что мы делаем</div>
     <section id="intro" class="container">
-      <p class="style1">Мы проводим мероприятия для хайтек компаний: митапы, конференции, хакатоны, фестивали, круглые столы
+      <p class="style1">Мы проводим мероприятия для хайтек компаний: митапы, конференции, хакатоны, фестивали, круглые
+        столы
         и мастер-классы.<br><br>
         Принцип нашей работы - минимум вопросов клиентам, компетентная аудитория, комфортные помещения, PR-поддержка и
         аналитика результатов мероприятия. <br><br>
@@ -154,7 +162,8 @@
                   <li>Полиграфия<span></span></li>
                 </ul>
               </li>
-              <li class="buttonPrice"><a data-offer='Проведите для нас "Митап"' class="js-order-offer" href="#">Заказать</a></li>
+              <li class="buttonPrice"><a data-offer='Проведите для нас "Митап"' class="js-order-offer"
+                href="#">Заказать</a></li>
             </ul>
           </li>
 
@@ -179,7 +188,8 @@
                   <li class="plus">Базовый SMM<span></span></li>
                 </ul>
               </li>
-              <li class="buttonPrice"><a data-offer='Мы хотим "Воркшоп"' class="js-order-offer" class="bestPlanButton" href="#">Заказать</a></li>
+              <li class="buttonPrice"><a data-offer='Мы хотим "Воркшоп"' class="js-order-offer" class="bestPlanButton"
+                href="#">Заказать</a></li>
             </ul>
           </li>
 
@@ -201,7 +211,7 @@
                   <li>Фотосъемка<span></span></li>
                   <li>Промо-ролик<span></span></li>
                   <li>Кейтеринг<span></span></li>
-                  
+
                   <li class="plus">Расширеный SMM<span></span></li>
                   <li class="plus">Пресс-вол<span></span></li>
                   <li class="plus">Телеграм канал события<span></span></li>
@@ -210,7 +220,8 @@
                   <li class="plus">Растекстовка докладов<span></span></li> -->
                 </ul>
               </li>
-              <li class="buttonPrice"><a data-offer='Нам нужна "Конференция"' class="js-order-offer" href="#">Заказать</a></li>
+              <li class="buttonPrice"><a data-offer='Нам нужна "Конференция"' class="js-order-offer"
+                href="#">Заказать</a></li>
             </ul>
           </li>
 
@@ -238,7 +249,8 @@
 
                 </ul>
               </li>
-              <li class="buttonPrice"><a  data-offer='Проведите нам "Хакатон!"' class="js-order-offer" href="#">Заказать</a></li>
+              <li class="buttonPrice"><a data-offer='Проведите нам "Хакатон!"' class="js-order-offer"
+                href="#">Заказать</a></li>
             </ul>
           </li>
 
@@ -398,7 +410,7 @@
       </div>
     </form>
     <div id="thanks">
-      Всё получилось! Мы свяжемся с вами в ближайшее время! 
+      Всё получилось! Мы свяжемся с вами в ближайшее время!
     </div>
   </div>
 
@@ -517,33 +529,42 @@
 
 
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter45757269 = new Ya.Metrika({
-                    id:45757269,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
-                });
-            } catch(e) { }
+<script type="text/javascript">
+  (function(d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+      try {
+        w.yaCounter45757269 = new Ya.Metrika({
+          id: 45757269,
+          clickmap: true,
+          trackLinks: true,
+          accurateTrackBounce: true,
+          webvisor: true
         });
+      }
+      catch (e) {
+      }
+    });
 
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
+    var n = d.getElementsByTagName("script")[0],
+      s = d.createElement("script"),
+      f = function() {
+        n.parentNode.insertBefore(s, n);
+      };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://mc.yandex.ru/metrika/watch.js";
 
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
+    if (w.opera == "[object Opera]") {
+      d.addEventListener("DOMContentLoaded", f, false);
+    }
+    else {
+      f();
+    }
+  })(document, window, "yandex_metrika_callbacks");
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/45757269" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript>
+  <div><img src="https://mc.yandex.ru/watch/45757269" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
 <!-- /Yandex.Metrika counter -->
 
 
