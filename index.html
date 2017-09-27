@@ -19,7 +19,7 @@
   <style>
     .youtube-player {
         position: relative;
-        padding-bottom: 56.23%;
+        padding-bottom: 50%;
         /* Use 75% for 4:3 videos */
         height: 0;
         overflow: hidden;
@@ -27,17 +27,18 @@
         background: #000;
         margin: 5px;
     }
-    
+
     .youtube-player iframe {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        /*height: 100%;*/
+        height: 183px;
         z-index: 100;
         background: transparent;
     }
-    
+
     .youtube-player img {
         bottom: 0;
         display: block;
@@ -55,11 +56,11 @@
         -moz-transition: .4s all;
         transition: .4s all;
     }
-    
+
     .youtube-player img:hover {
         -webkit-filter: brightness(75%);
     }
-    
+
     .youtube-player .play {
         height: 72px;
         width: 72px;
@@ -74,8 +75,7 @@
 
 </style>
 
-
-
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
 </head>
 <style type="text/css">
@@ -88,9 +88,9 @@
           #header-wrapper {
             background: url("images/banner.jpg") center center;
             background-size: cover;
-          }  
+          }
         }
-        
+
 </style>
 <body class="homepage">
   <div id="big-video-vid" style="position: absolute; overflow: hidden; width: 100%;">
@@ -427,7 +427,7 @@
       <div class="row 150%">
         <div class="4u 12u(mobile)">
           <section class="highlight">
-            <img src="images/iot_conference.png" width="326" height="183" alt=""/>
+            <img src="images/iot_conference.png" width="326px" height="183px" alt=""/>
             <h3><a href="#">Конференция "Что нужно знать, чтобы работать с IoT"</a></h3>
             <p><h4>25 июля 2016</h4>
             Конференция, объединившая инженеров, разработчиков, пользователей и бизнесменов. </p>
@@ -438,13 +438,8 @@
         </div>
         <div class="4u 12u(mobile)">
           <section class="highlight">
-			
+
 			<div class="youtube-player" data-id="hX4GhVeEI5c" style="width:326px;height:183px;"></div>
-
-
-            <!-- <iframe width="326" height="183" src="https://www.youtube.com/embed/hX4GhVeEI5c?rel=0" frameborder="0"
-              allowfullscreen></iframe> -->
-
             <h3><a href="#">Митап "Использование TypeScript в NodeJS"</a></h3>
             <p><h4>31 марта 2017</h4>
             Конференция, объединившая инженеров, разработчиков, пользователей и бизнесменов. </p>
@@ -456,7 +451,6 @@
         <div class="4u 12u(mobile)">
           <section class="highlight">
 			<div class="youtube-player" data-id="vhk5BxDJ8xI" style="width:326px;height:183px;"></div>
-            <!-- <iframe width="326" height="183" src="https://www.youtube.com/embed/vhk5BxDJ8xI?rel=0" frameborder="0" allowfullscreen></iframe> -->
             <h3><a href="#">Конференция: "Big Monitoring Meetup"</a></h3>
             <p><h4>14 июля 2017</h4>
             Конференция, объединившая инженеров, разработчиков, пользователей и бизнесменов. </p>
