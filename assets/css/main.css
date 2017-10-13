@@ -19,9 +19,16 @@
 	}
 
 	iframe#bx_form_iframe_7 {
-		max-height: 380px;
+		max-height: 480px;
+		height: 400px !important;
 
 	}
+
+  .anchor {
+		position: relative;
+		top: -148px;
+	}
+
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
@@ -2027,6 +2034,9 @@
 					border-radius: 0.35em;
 					box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
 					padding: 0 1.5em 0 1.5em;
+				}
+				#nav > ul:hover {
+					background-color: #24262E;
 				}
 
 					#nav > ul > li {
